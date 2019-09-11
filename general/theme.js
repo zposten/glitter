@@ -4,6 +4,10 @@ export const secondary = '#ffda7d'
 export const secondaryDark = '#d6b769'
 export const neutral = '#c5c6c7'
 
+export const green = '#96ffd0'
+export const pink = '#ffafed'
+export const purple = '#a1b7ff'
+
 export const theme = {
   breakpoints: {
     xs: 1,
