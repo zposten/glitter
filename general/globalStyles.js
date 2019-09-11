@@ -8,9 +8,9 @@ export const GlobalStyles = createGlobalStyle`
 
   body { 
     margin: 0;
-    background: ${primary};
+    background: white;
+    color: black;
     font-family: Roboto, Arial;
-    color: white;
   }
 
   a {
