@@ -17,12 +17,20 @@ const Glitter = styled.div`
   width: 100%;
 `
 
-const Squares = styled.div`
-  width: 500px;
-  height: 450px;
+const Header = styled.div`
   position: relative;
   margin: auto;
   margin-top: 50px;
+  height: 450px;
+  width: 575px;
+`
+
+const Squares = styled.div`
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 `
 
 const squareSize = '400px'
@@ -35,6 +43,22 @@ const Square = styled.div`
   position: absolute;
 `
 
+const postItSize = 250
+const PostIt = styled.div`
+  width: ${postItSize}px;
+  height: ${postItSize}px;
+  background: ${purple};
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  top: calc(50% - ${postItSize / 2}px);
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-size: 24px;
+`
+
 export default class Index extends React.Component {
   render() {
     return (
@@ -43,10 +67,13 @@ export default class Index extends React.Component {
           <title>Kierstyn Robbins</title>
         </Head>
         <Glitter />
-        <Squares>
-          <Square color={green} isTop />
-          <Square color={pink} />
-        </Squares>
+        <Header>
+          <Squares>
+            <Square color={green} isTop />
+            <Square color={pink} />
+          </Squares>
+          <PostIt>Hi, My name is Kierstyn</PostIt>
+        </Header>
         <DevelopmentCredit />
       </PageLayout>
     )
