@@ -52,6 +52,7 @@ const PostIt = styled.div`
   padding: 0 30px;
   box-sizing: border-box;
   font-size: 24px;
+  box-shadow: 5px 7px 10px 1px #00000022;
 `
 
 export function Title({src, backColor, postItColor}) {
